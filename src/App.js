@@ -63,12 +63,12 @@ function App() {
       return computer.name == "Rock" ? "win" : "lose";
   };
   return (
-    <div>
+    <div className="app-container">
       <div className="main">
         <Box title="You" item={userSelect} result={result} />
         <Box title="Computer" item={computerSelect} result={result} />
       </div>
-      <div className="main">
+      <div className="button-container">
         <button onClick={() => play("scissors")}>가위</button>
         <button onClick={() => play("rock")}>바위</button>
         <button onClick={() => play("paper")}>보</button>
